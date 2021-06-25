@@ -72,7 +72,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(svg)(\?\S*)?$/,
+        test: /\.(svg|png)(\?\S*)?$/,
         type: 'asset/resource',
         generator: {
           filename: './assets/images/[name].[ext]',
