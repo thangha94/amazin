@@ -22,6 +22,7 @@ const Home = () => {
             rating={2}
             price={10.22}
             image={Product1}
+            id="1"
             key="1"
           />
           <Product
@@ -31,6 +32,7 @@ const Home = () => {
             rating={4}
             price={10.22}
             image={Product2}
+            id={2}
             key="2"
           />
         </div>
@@ -42,6 +44,7 @@ const Home = () => {
             rating={4}
             price={10.22}
             image={Product3}
+            id={3}
             key="3"
           />
           <Product
@@ -51,6 +54,7 @@ const Home = () => {
             rating={4}
             price={10.22}
             image={Product4}
+            id={4}
             key="4"
           />
           <Product
@@ -60,6 +64,7 @@ const Home = () => {
             rating={4}
             price={10.22}
             image={Product5}
+            id={5}
             key="5"
           />
         </div>
@@ -71,6 +76,7 @@ const Home = () => {
             rating={4}
             price={10.22}
             image={Product6}
+            id={6}
             key="6"
           />
         </div>

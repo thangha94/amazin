@@ -1,0 +1,28 @@
+@import '../styles/config';
+.checkout-product {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .checkout-product__info {
+    padding-left: 20px;
+    > button {
+      background: $backgroundColorThird;
+      border: 1px solid;
+      margin-top: 0px;
+      border-color: $borderColorBtn;
+      color: #111;
+    }
+  }
+  .checkout-product__image {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+  }
+  .checkout-product__rating {
+    display: flex;
+  }
+  .checkout-product__title {
+    font-size: 17px;
+    font-weight: 800;
+  }
+}

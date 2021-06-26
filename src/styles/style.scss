@@ -9,3 +9,7 @@ body {
   background-color: $backgroundColorMain;
   font-family: 'Noto Sans TC', sans-serif;
 }
+button,
+input[type='button'] {
+  cursor: pointer;
+}

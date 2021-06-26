@@ -7,11 +7,14 @@ import { render } from 'react-dom';
 import App from './App';
 import './styles/style.scss';
 import { Provider } from 'react-redux';
+import { StateProvider } from './ContextApi/StateProvider';
 // import store from './redux/store';
 render(
   //  <Provider store={store}>
   // <Provider>
-  <App />,
+  <StateProvider>
+    <App />
+  </StateProvider>,
   // </Provider>,
   document.getElementById('root')
 );
