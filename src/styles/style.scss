@@ -1,6 +1,11 @@
 @import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: $backgroundColorMain;
+  font-family: 'Noto Sans TC', sans-serif;
 }

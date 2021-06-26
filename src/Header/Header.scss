@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   background-color: $backgroundColorFirst;
-  position: static;
+  position: sticky;
   top: 0;
   z-index: 100;
   &__logo {
