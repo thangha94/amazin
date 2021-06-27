@@ -17,10 +17,12 @@ const Header = () => {
         <SearchIcon className="header__search-icon" />
       </div>
       <div className="header__nav">
-        <div className="header__option">
-          <span className="header__option-line-one">Hello Guest</span>
-          <span className="header__option-line-two">Sign In</span>
-        </div>
+        <Link className="header__link-login" to="/login">
+          <div className="header__option">
+            <span className="header__option-line-one">Hello Guest</span>
+            <span className="header__option-line-two">Sign In</span>
+          </div>
+        </Link>
         <div className="header__option">
           <span className="header__option-line-one">Return</span>
           <span className="header__option-line-two">Orders</span>
