@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header/Header';
 import Home from './Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Checkout from './Checkout/Checkout';
 import Login from './Login/Login';
+import { auth } from './firebase';
+import { useStateValue } from './ContextApi/StateProvider';
 const App = () => {
-  // BEM
+  const [{ basket, user }, dispatch] = useStateValue();
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      console.log('USER IS ', authUser);
+      if (authUser) {
+        // the use just logged in
+        dispatch({
+          type: 'SET_USER',
+          user: authUser,
+        });
+      } else {
+        // the user is logged out
+        dispatch({
+          type: 'SET_USER',
+          user: null,
+        });
+      }
+    });
+  }, []);
   return (
     <Router>
       <div className="app">

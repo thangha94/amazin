@@ -1,19 +1,36 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { auth } from '../firebase';
 import LogoBlack from '../images/amazon-logo-black.png';
 import './Login.scss';
 const Login = () => {
+  const history = useHistory();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const signIn = (e) => {
     e.preventDefault();
 
     // some fancy login
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push('/');
+      })
+      .catch((error) => console.log(error.message));
   };
-  const register = () => {
+  const register = (e) => {
     e.preventDefault();
-
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // it successfully created new user with email and password
+        console.log(auth);
+        if (auth) {
+          history.push('/');
+        }
+      })
+      .catch((error) => console.log(error.message));
     //   Do some fancy firebase register
   };
   return (
