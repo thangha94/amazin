@@ -48,6 +48,8 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@stripe/react-stripe-js": "^1.4.1",
+    "@stripe/stripe-js": "^1.15.1",
     "axios": "^0.21.1",
     "core-js": "^3.12.1",
     "firebase": "^8.6.8",
