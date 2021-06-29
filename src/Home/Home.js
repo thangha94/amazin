@@ -8,12 +8,15 @@ import Product3 from '../images/product3.jpg';
 import Product4 from '../images/product4.jpg';
 import Product5 from '../images/product5.jpg';
 import Product6 from '../images/product6.jpg';
+import Product9 from '../images/product9.jpg';
+import Slider from './Slider/Slider';
 
 const Home = () => {
   return (
     <div className="home">
       <div className="home__container">
-        <img className="home__image" src={Slice1} alt="" />
+        <Slider />
+        {/* <img className="home__image" src={Slice1} alt="" /> */}
         <div className="home__row">
           <Product
             title={
@@ -34,6 +37,16 @@ const Home = () => {
             image={Product2}
             id={2}
             key="2"
+          />
+          <Product
+            title={
+              'Magnelex Windshield Sun Shade Windshield Sunshade Heat Reflector Car Sun Visor Sun Shield'
+            }
+            rating={2}
+            price={4.33}
+            image={Product9}
+            id={33}
+            key={33}
           />
         </div>
         <div className="home__row">

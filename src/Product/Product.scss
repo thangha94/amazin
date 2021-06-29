@@ -40,10 +40,12 @@
     }
   }
   > button {
-    background-color: $backgroundColorThird;
+    background: $backgroundColorThird;
+    border-radius: 2px;
+    height: 30px;
     border: 1px solid;
-    margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
+    padding: 5px 10px;
+    border-color: $borderColorBtn;
     color: #111;
   }
 }

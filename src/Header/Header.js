@@ -13,7 +13,7 @@ const Header = () => {
     }
   };
   return (
-    <div className="header">
+    <div className="header" id="header">
       {/* <img src={amazonLogo} alt="" className="header__logo" /> */}
       <Link className="header__link" to="/">
         <span className="header__logo"></span>
